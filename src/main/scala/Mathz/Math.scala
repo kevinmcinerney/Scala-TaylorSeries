@@ -22,13 +22,17 @@ class Math {
   def e(x: Double, nDecPlaces: Int): Double = recTaylorSeries(Euler(x))(nDecPlaces, 1)
 
   def taylorSeries(t: TaylorSeries): Stream[Double] = t match {
-    case Sin(x) => sinSeries(1, x)
-    case Cos(x) => cosSeries(0, x)
+    case Sin(x) => sinSeries(1, x, 0)
+    case Cos(x) => cosSeries(0, x, 0)
     case Euler(x) => eulerSeries(0, x)
   }
 
   def sumTaylorSeries(ts: Stream[Double], degree: Int): Double = {
     ts.take(degree).sum
+  }
+
+  def sumTaylorSeries(ts: Stream[Double]): Double = {
+    ts.sum
   }
 
   def pow(base: Double, exponent: Double): Double = exponent match {
@@ -43,41 +47,47 @@ class Math {
 
   private def recTaylorSeries(t: TaylorSeries)(nDecPlaces: Int, degree: Int): Double = t match {
     case Sin(x) => {
-      val cur = sumTaylorSeries(taylorSeries(Sin(x)), degree / 2 + 1)
-      val prev = sumTaylorSeries(taylorSeries(Sin(x)), degree / 2)
-      if (accurateEnough(cur, prev, nDecPlaces)) cur else recTaylorSeries(Sin(x))(nDecPlaces, degree + 1)
+      lazy val cur = taylorSeries(Sin(x)).take(degree / 2 + 1)
+      val curSum = sumTaylorSeries(cur)
+      val prevSum = curSum + cur.last
+      if (accurateEnough(curSum, prevSum, nDecPlaces)) round(curSum,nDecPlaces)  else recTaylorSeries(Sin(x))(nDecPlaces, degree + 1)
     }
     case Cos(x) => {
-      val cur = sumTaylorSeries(taylorSeries(Cos(x)), degree / 2 + 1)
-      val prev = sumTaylorSeries(taylorSeries(Cos(x)), degree / 2)
-      if (accurateEnough(cur, prev, nDecPlaces)) cur else recTaylorSeries(Cos(x))(nDecPlaces, degree + 1)
+      lazy val cur = taylorSeries(Cos(x)).take(degree / 2 + 1)
+      val curSum = sumTaylorSeries(cur)
+      val prevSum = curSum + cur.last
+      if (accurateEnough(curSum, prevSum, nDecPlaces)) round(curSum,nDecPlaces) else recTaylorSeries(Cos(x))(nDecPlaces, degree + 1)
     }
     case Euler(x) => {
-      val cur = sumTaylorSeries(taylorSeries(Euler(x)), degree + 1)
-      val prev = sumTaylorSeries(taylorSeries(Euler(x)), degree)
-      if (accurateEnough(cur, prev, nDecPlaces)) cur else recTaylorSeries(Euler(x))(nDecPlaces, degree + 1)
+      lazy val cur = taylorSeries(Euler(x)).take(degree / 2 + 1)
+      val curSum = sumTaylorSeries(cur)
+      val prevSum = curSum + cur.last
+      if (accurateEnough(curSum, prevSum, nDecPlaces)) round(curSum, nDecPlaces) else recTaylorSeries(Euler(x))(nDecPlaces, degree + 1)
     }
-
   }
 
   private def eulerSeries(from: Int, x: Double): Stream[Double] = {
     Stream.cons( pow(x, from) / factorial(from), eulerSeries(from + 1, x))
   }
 
-  private def cosSeries(from: Int, x: Double): Stream[Double] = {
-    Stream.cons(pow(-1, from) * pow(x, from) / factorial(from), cosSeries(from + 2, x))
+  private def cosSeries(from: Int, x: Double, n: Int): Stream[Double] = {
+    Stream.cons(pow(-1, n) * pow(x, from) / factorial(from), cosSeries(from + 2, x, n + 1))
   }
 
-  private def sinSeries(from: Int, x: Double): Stream[Double] = {
-    Stream.cons(pow(-1, from) * pow(x, from) / factorial(from), sinSeries(from + 2, x))
+  private def sinSeries(from: Int, x: Double, n: Int): Stream[Double] = {
+    Stream.cons((pow(-1, n) * pow(x, from)) / factorial(from), sinSeries(from + 2, x, n + 1))
   }
 
   private def accurateEnough(curValue: Double, prevValue: Double, nDecPts: Int): Boolean = {
-    val tmp = pow(10, nDecPts)
-    val prev = scala.math.round(prevValue * tmp) / tmp
-    val cur = scala.math.round(curValue * tmp) / tmp
+    val prev = round(prevValue, nDecPts)
+    val cur =  round(curValue, nDecPts)
     scala.math.abs(cur - prev) == 0.0
 
+  }
+
+  private def round(value: Double, nDecPts: Int): Double = {
+    val tmp = pow(10, nDecPts)
+    scala.math.round(value * tmp) / tmp
   }
 
 }
@@ -92,7 +102,7 @@ object Math {
   def cos(x: Double, nDecPlaces: Int): Double = m.cos(x, nDecPlaces)
   def e(x: Double): Double = m.e(x)
   def e(x: Double, nDecPlaces: Int): Double = m.e(x, nDecPlaces)
-m
+
   def pow(base: Double, exponent: Double): Double = m.pow(base, exponent)
 
   def factorial(x: Int): Int = m.factorial(x)

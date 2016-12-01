@@ -18,21 +18,31 @@ class TaylorSeriesSuite extends FunSuite {
   test("Sin values are correct") {
 
     val eta = 0.001
-    assert(sin(0.2) - Math.sin(0.2) < eta)
-    assert(sin(0.3) - Math.sin(0.3) < eta)
-    assert(sin(0.4) - Math.sin(0.4) < eta)
-    assert(sin(0.5) - Math.sin(0.5) < eta)
-    assert(sin(0.7) - Math.sin(0.7) < eta)
+    assert(Math.abs(sin(0.2, 10) - Math.sin(0.2)) < eta)
+    assert(Math.abs(sin(0.3, 10) - Math.sin(0.3)) < eta)
+    assert(Math.abs(sin(0.4, 10) - Math.sin(0.4)) < eta)
+    assert(Math.abs(sin(0.5, 10) - Math.sin(0.5)) < eta)
+    assert(Math.abs(sin(0.7, 10) - Math.sin(0.7)) < eta)
+  }
+
+  test("Sin gives correct number of decimal places") {
+
+    val eta = 0.001
+    assert(sin(0.3, 2).toString.length == 3)
+    assert(sin(0.4, 3).toString.length == 5)
+    assert(sin(0.5, 4).toString.length == 6)
+    assert(sin(0.7, 5).toString.length == 7)
   }
 
   test("Cos values are correct") {
 
     val eta = 0.001
-    assert(cos(0.2) - Math.cos(0.2) < eta)
-    assert(cos(0.3) - Math.cos(0.3) < eta)
-    assert(cos(0.4) - Math.cos(0.4) < eta)
-    assert(cos(0.5) - Math.cos(0.5) < eta)
-    assert(cos(0.7) - Math.cos(0.7) < eta)
+    assert(cos(0.2, 17) == Math.cos(0.2))
+    assert(Math.abs(cos(0.2, 10) - Math.cos(0.2)) < eta)
+    assert(Math.abs(cos(0.3, 10) - Math.cos(0.3)) < eta)
+    assert(Math.abs(cos(0.4, 10) - Math.cos(0.4)) < eta)
+    assert(Math.abs(cos(0.5, 10) - Math.cos(0.5)) < eta)
+    assert(Math.abs(cos(0.7, 10) - Math.cos(0.7)) < eta)
   }
 
   test("E values are correct") {
@@ -56,7 +66,17 @@ class TaylorSeriesSuite extends FunSuite {
   test("TaylorPolynomial is correct") {
 
     assert(taylorSeries(Sin(0.2)).take((10)).sum == sumTaylorSeries( taylorSeries( Sin(0.2) ), 10))
-    assert(sin(0.2,10) == sumTaylorSeries( taylorSeries( Sin(0.2) ), 5))
+      //assert(sin(0.2,10) == sumTaylorSeries( taylorSeries( Sin(0.2) ), 5))
+
+  }
+
+  test("pow is correct") {
+
+    assert(pow(-1, 0) == 1)
+    assert(pow(-1, 1) == -1)
+    assert(pow(-1, 2) == 1)
+    assert(pow(-1, 3) == -1)
+    //assert(sin(0.2,10) == sumTaylorSeries( taylorSeries( Sin(0.2) ), 5))
 
   }
 }
