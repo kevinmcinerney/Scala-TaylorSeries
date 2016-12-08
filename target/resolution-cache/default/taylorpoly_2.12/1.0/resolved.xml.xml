@@ -4,7 +4,7 @@
 		module="taylorpoly_2.12"
 		revision="1.0"
 		status="integration"
-		publication="20161126202649"
+		publication="20161203125937"
 	>
 		<description>
 		TaylorPoly
@@ -34,6 +34,7 @@
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.12.0" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.12.0" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="com.storm-enroute" name="scalameter-core_2.10" rev="0.7" conf="compile->default(compile)"/>
 		<dependency org="junit" name="junit" rev="4.10" conf="test->default(compile)"/>
 		<dependency org="org.scalactic" name="scalactic_2.12" rev="3.0.1" conf="compile->default(compile)"/>
 		<dependency org="org.scalatest" name="scalatest_2.12" rev="3.0.1" conf="test->default(compile)"/>

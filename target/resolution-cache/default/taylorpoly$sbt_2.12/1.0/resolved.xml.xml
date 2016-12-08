@@ -4,7 +4,7 @@
 		module="taylorpoly$sbt_2.12"
 		revision="1.0"
 		status="integration"
-		publication="20161126202653"
+		publication="20161203125939"
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>

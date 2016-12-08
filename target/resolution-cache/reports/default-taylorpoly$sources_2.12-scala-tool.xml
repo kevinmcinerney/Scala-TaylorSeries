@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="scala-tool"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20161126202653"/>
+		date="20161203125939"/>
 	<dependencies>
 		<module organisation="org.scala-lang.modules" name="scala-xml_2.12">
 			<revision name="1.0.5" status="release" pubdate="20161029001007" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
@@ -15,7 +15,7 @@
 				<metadata-artifact status="no" details="" size="3011" time="0" location="/home/kevin/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/ivy-1.0.5.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.12/1.0.5/scala-xml_2.12-1.0.5.pom"/>
 				<caller organisation="default" name="taylorpoly$sources_2.12" conf="scala-tool" rev="1.0.5" rev-constraint-default="1.0.5" rev-constraint-dynamic="1.0.5" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="scala-xml_2.12" type="jar" ext="jar" status="successful" details="" size="548430" time="361" location="/home/kevin/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/jars/scala-xml_2.12-1.0.5.jar">
+					<artifact name="scala-xml_2.12" type="jar" ext="jar" status="no" details="" size="548430" time="0" location="/home/kevin/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/jars/scala-xml_2.12-1.0.5.jar">
 						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.12/1.0.5/scala-xml_2.12-1.0.5.jar"/>
 					</artifact>
 					<artifact name="scala-xml_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="109241" time="0" location="/home/kevin/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/srcs/scala-xml_2.12-1.0.5-sources.jar">
