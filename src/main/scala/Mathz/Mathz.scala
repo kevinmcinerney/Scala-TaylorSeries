@@ -9,20 +9,42 @@ import scala.math.BigDecimal
 
 abstract class TaylorSeries
 
-case class Sin(x: BigDecimal) extends TaylorSeries
-case class Cos(x: BigDecimal) extends TaylorSeries
+case class Sin(x: Radian) extends TaylorSeries
+case class Cos(x: Radian) extends TaylorSeries
 case class Euler(x: BigDecimal) extends TaylorSeries
+
+class Radian(val degrees: BigDecimal) {
+
+  val PI = Math.PI
+
+  val value = degrees * PI / 180
+
+  def +(other: Radian) = new Radian(this.value + other.value)
+
+  def -(other: Radian) = new Radian(this.value - other.value)
+
+  def *(by: BigDecimal) = new Radian(this.value * by)
+
+  def /(by: BigDecimal) = new Radian(this.value / by)
+
+  def %(other: Radian) = new Radian(this.value / other.value)
+
+  def toRange(rad: Radian): Radian = new Radian(this.degrees % rad.degrees)
+
+  override def toString: String = "("+degrees + " * PI) / " + 180 + ")"
+
+}
 
 
 final class Mathz {
 
-  def sin(x: BigDecimal): BigDecimal = recTaylorSeries(Sin(x))(10, 1)
+  def sin(x: Radian): BigDecimal = recTaylorSeries(Sin(x.toRange(new Radian(90))))(10, 1)
 
-  def sin(x: BigDecimal, nDecPlaces: Int): BigDecimal = recTaylorSeries(Sin(x))(nDecPlaces, 10)
+  def sin(x: Radian, nDecPlaces: Int): BigDecimal = recTaylorSeries(Sin(x.toRange(new Radian(90))))(nDecPlaces, 10)
 
-  def cos(x: BigDecimal): BigDecimal = recTaylorSeries(Cos(x))(10, 1)
+  def cos(x: Radian): BigDecimal = recTaylorSeries(Cos(x.toRange(new Radian(180))))(10, 1)
 
-  def cos(x: BigDecimal, nDecPlaces: Int): BigDecimal = recTaylorSeries(Cos(x))(nDecPlaces, 10)
+  def cos(x: Radian, nDecPlaces: Int): BigDecimal = recTaylorSeries(Cos(x.toRange(new Radian(180))))(nDecPlaces, 10)
 
   def e(x: BigDecimal): BigDecimal = recTaylorSeries(Euler(x))(5, 1)
 
@@ -31,8 +53,8 @@ final class Mathz {
   }
 
   def taylorSeries(t: TaylorSeries): Stream[BigDecimal] = t match {
-    case Sin(x) => sinSeries(x, 0)
-    case Cos(x) => cosSeries(x, 0)
+    case Sin(x) => sinSeries(x.value, 0)
+    case Cos(x) => cosSeries(x.value.abs, 0)
     case Euler(x) => eulerSeries(x, 0)
   }
 
@@ -98,14 +120,21 @@ final class Mathz {
   }
 
   private def accurateEnough(curValue: BigDecimal, prevValue: BigDecimal, nDecPts: Int): Boolean = {
+
     val prev = round(prevValue, nDecPts + 2)
     val cur = round(curValue, nDecPts + 2)
+/*    println("p: " + prev)
+    println("c: " + cur)
+    println()*/
     (cur - prev).abs == 0.0
   }
 
-  private def round(n: BigDecimal, p: Int): BigDecimal = {
+  def round(n: BigDecimal, p: Int): BigDecimal = {
     n.round(new MathContext(p, RoundingMode.HALF_UP))
   }
+
+
+
 
 }
 
@@ -113,10 +142,10 @@ object Mathz {
 
   val m = new Mathz()
 
-  def sin(x: BigDecimal): BigDecimal = sin(x)
-  def sin(x: BigDecimal, nDecPlaces: Int): BigDecimal = m.sin(x, nDecPlaces)
-  def cos(x: BigDecimal): BigDecimal = m.cos(x)
-  def cos(x: BigDecimal, nDecPlaces: Int): BigDecimal = m.cos(x, nDecPlaces)
+  def sin(x: Radian): BigDecimal = sin(x)
+  def sin(x: Radian, nDecPlaces: Int): BigDecimal = m.sin(x, nDecPlaces)
+  def cos(x: Radian): BigDecimal = m.cos(x)
+  def cos(x: Radian, nDecPlaces: Int): BigDecimal = m.cos(x, nDecPlaces)
   def e(x: BigDecimal): BigDecimal = m.e(x)
   def e(x: BigDecimal, nDecPlaces: Int, mem: Boolean): BigDecimal = m.e(x, mem, nDecPlaces)
 
@@ -127,6 +156,8 @@ object Mathz {
   def taylorSeries(t: TaylorSeries): Stream[BigDecimal] = m.taylorSeries(t)
 
   def sumTaylorSeries(ts: Stream[BigDecimal], degree: Int): BigDecimal = m.sumTaylorSeries(ts, degree)
+
+  def round(n: BigDecimal, p:Int) = m.round(n, p)
 
 }
 
@@ -153,17 +184,39 @@ object MathzRunner {
 
     val speedUp = noMemory.value / memory.value
 
-    println("========================= Time ================================== Value")
+    println("========================= e Time ================================== Value")
     println()
     print(s"Memory time:".padTo(25, ' '))
     print(s"$memory".padTo(40, ' '))
-    println(m.e(0.0, false, 16).toString.padTo(25, ' '))
+    println(m.e(0.3, false, 10).toString.padTo(25, ' '))
     print(s"No Memory time:".padTo(25, ' '))
     print(s"$noMemory".padTo(40, ' '))
-    println(m.e(0.0, true,  16).toString.padTo(25, ' '))
+    println(m.e(0.3, true,  10).toString.padTo(25, ' '))
 
     print(s"Speed up:".padTo(25, ' '))
     print(s"$speedUp".padTo(25, ' '))
+    println()
+    println()
+    println("========================================================================")
+
+    val lib = standardConfig measure Math.sin(0.3)
+
+    val mine = standardConfig measure  m.sin(new Radian(0.3))
+
+    val speedUp2 = lib.value / mine.value
+
+    println()
+    println("========================= Sin Time ================================== Value")
+    println()
+    print(s"Mine:".padTo(25, ' '))
+    print(s"$mine".padTo(40, ' '))
+    println(m.sin(new Radian(0.3), 10).toString.padTo(25, ' '))
+    print(s"Library:".padTo(25, ' '))
+    print(s"$lib".padTo(40, ' '))
+    println(Math.sin(0.3)).toString.padTo(25, ' ')
+
+    print(s"Speed up:".padTo(25, ' '))
+    print(s"$speedUp2".padTo(25, ' '))
     println()
     println()
     println("========================================================================")
