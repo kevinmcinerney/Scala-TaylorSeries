@@ -1,100 +1,400 @@
 /**
   * Created by kevin on 26/11/16.
   */
-
-
-import Mathz.Mathz._
-import Mathz.{Radian, Sin}
 import org.junit.runner.RunWith
 import org.scalatest.FunSuite
 import org.scalatest.junit.JUnitRunner
+import Mathz.{Radian, Sin}
+import Mathz.Mathz._
 
 @RunWith(classOf[JUnitRunner])
 class TaylorSeriesSuite extends FunSuite {
 
-  import Mathz.Mathz._
-
   val eta = 0.001
 
-  def ~=(x: BigDecimal, y: BigDecimal) = if ((x - y).abs < eta) true else false
+  def ~=(x: BigDecimal, y: Double) = if ((x.toDouble - y).abs < eta) true else false
 
+  def ~=(x: BigDecimal, y: BigDecimal) = if ((x.toDouble - y).abs < eta) true else false
 
-  test("Sin values are correct about zero") {
-
-    assert(~=(sin(new Radian(10), 10), Math.sin(new Radian(10).value.toDouble)))
-    assert(~=(sin(new Radian(20), 10), Math.sin(new Radian(20).value.toDouble)))
-    assert(~=(sin(new Radian(45), 10), Math.sin(new Radian(45).value.toDouble)))
-    assert(~=(sin(new Radian(65), 5), Math.sin(new Radian(65).value.toDouble)))
-    assert(~=(sin(new Radian(89), 3), Math.sin(new Radian(89).value.toDouble)))
-    assert(~=(sin(new Radian(-10), 10), Math.sin(new Radian(-10).value.toDouble)))
-    assert(~=(sin(new Radian(-20), 10), Math.sin(new Radian(-20).value.toDouble)))
-    assert(~=(sin(new Radian(-45), 10), Math.sin(new Radian(-45).value.toDouble)))
-    assert(~=(sin(new Radian(-65), 5), Math.sin(new Radian(-65).value.toDouble)))
-    assert(~=(sin(new Radian(-89), 3), Math.sin(new Radian(-89).value.toDouble)))
+  def ~~=(x: Seq[BigDecimal], y: Seq[Double]): Boolean = {
+    x.zip(y).forall(tup => ~=(tup._1, tup._2))
   }
+
+  //====================SINE================================================
+
+  test("Sin (0 - -45) degrees should be positive and correct")  {
+    val quad_1a = (0 to (-45, -1)).map(d => sin(Radian(d)))
+    val quad_1b = (0 to (-45, -1)).map(d => Math.sin(Radian(d).value.toDouble))
+    //quad_1a.zip(quad_1b).foreach(println(_))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("Sin (-46 - -90) degrees should be positive and correct")  {
+    val quad_1a = (-46 to (-90, -1)).map(d => sin(Radian(d)))
+    val quad_1b = (-46 to (-90, -1)).map(d => Math.sin(Radian(d).value.toDouble))
+    //println(quad_1a.zip(quad_1b))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("Sin (-91 - -135) degrees should be positive and correct")  {
+    val quad_1a = (-91 to (-135, -1)).map(d => sin(Radian(d)))
+    val quad_1b = (-91 to (-135, -1)).map(d => Math.sin(Radian(d).value.toDouble))
+    //quad_1a.zip(quad_1b).foreach(println(_))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("Sin (-136 - -180) degrees should be positive and correct")  {
+    val quad_1a = (-136 to (-180, -1)).map(d => sin(Radian(d)))
+    val quad_1b = (-136 to (-180, -1)).map(d => Math.sin(Radian(d).value.toDouble))
+    //println(quad_1a.zip(quad_1b))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("Sin (-181 - -225) degrees should be positive and correct")  {
+    val quad_1a = (-181 to (-225, -1)).map(d => sin(Radian(d)))
+    val quad_1b = (-181 to (-225, -1)).map(d => Math.sin(Radian(d).value.toDouble))
+    //quad_1a.zip(quad_1b).foreach(println(_))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("Sin (-226 - -270) degrees should be positive and correct")  {
+    val quad_1a = (-226 to (-270, -1)).map(d => sin(Radian(d)))
+    val quad_1b = (-226 to (-270, -1)).map(d => Math.sin(Radian(d).value.toDouble))
+    //println(quad_1a.zip(quad_1b))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("Sin (-270 - -315) degrees should be positive and correct")  {
+    val quad_1a = (-270 to (-315, -1)).map(d => sin(Radian(d)))
+    val quad_1b = (-270 to (-315, -1)).map(d => Math.sin(Radian(d).value.toDouble))
+    //quad_1a.zip(quad_1b).foreach(println(_))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("Sin (-316 - -360) degrees should be positive and correct")  {
+    val quad_1a = (-316 to (-360, -1)).map(d => sin(Radian(d)))
+    val quad_1b = (-316 to (-360, -1)).map(d => Math.sin(Radian(d).value.toDouble))
+    //println(quad_1a.zip(quad_1b))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("Sin (-361 - -405) degrees should be positive and correct")  {
+    val quad_1a = (-361 to (-405, -1)).map(d => sin(Radian(d)))
+    val quad_1b = (-361 to (-405, -1)).map(d => Math.sin(Radian(d).value.toDouble))
+    //println(quad_1a.zip(quad_1b))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("Sin (-406 - -450) degrees should be positive and correct")  {
+    val quad_1a = (-406 to (-450, -1)).map(d => sin(Radian(d)))
+    val quad_1b = (-406 to (-450, -1)).map(d => Math.sin(Radian(d).value.toDouble))
+    //println(quad_1a.zip(quad_1b))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+
+  test("Sin (0 - 45) degrees should be positive and correct")  {
+    val quad_1a = (0 to 45).map(d => sin(Radian(d)))
+    val quad_1b = (0 to 45).map(d => Math.sin(Radian(d).value.toDouble))
+    //quad_1a.zip(quad_1b).foreach(println(_))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("Sin (46 - 90) degrees should be positive and correct")  {
+    val quad_1a = (46 to 90).map(d => sin(Radian(d)))
+    val quad_1b = (46 to 90).map(d => Math.sin(Radian(d).value.toDouble))
+    //println(quad_1a.zip(quad_1b))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("Sin (91 - 135) degrees should be positive and correct")  {
+    val quad_1a = (91 to 135).map(d => sin(Radian(d)))
+    val quad_1b = (91 to 135).map(d => Math.sin(Radian(d).value.toDouble))
+    //quad_1a.zip(quad_1b).foreach(println(_))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("Sin (136 - 180) degrees should be positive and correct")  {
+    val quad_1a = (136 to 180).map(d => sin(Radian(d)))
+    val quad_1b = (136 to 180).map(d => Math.sin(Radian(d).value.toDouble))
+    //println(quad_1a.zip(quad_1b))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("Sin (181 - 225) degrees should be positive and correct")  {
+    val quad_1a = (181 to 225).map(d => sin(Radian(d)))
+    val quad_1b = (181 to 225).map(d => Math.sin(Radian(d).value.toDouble))
+    //quad_1a.zip(quad_1b).foreach(println(_))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("Sin (226 - 270) degrees should be positive and correct")  {
+    val quad_1a = (226 to 270).map(d => sin(Radian(d)))
+    val quad_1b = (226 to 270).map(d => Math.sin(Radian(d).value.toDouble))
+    //println(quad_1a.zip(quad_1b))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("Sin (270 - 315) degrees should be positive and correct")  {
+    val quad_1a = (270 to 315).map(d => sin(Radian(d)))
+    val quad_1b = (270 to 315).map(d => Math.sin(Radian(d).value.toDouble))
+    //quad_1a.zip(quad_1b).foreach(println(_))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("Sin (316 - 360) degrees should be positive and correct")  {
+    val quad_1a = (316 to 360).map(d => sin(Radian(d)))
+    val quad_1b = (316 to 360).map(d => Math.sin(Radian(d).value.toDouble))
+    //println(quad_1a.zip(quad_1b))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("Sin (361 - 405) degrees should be positive and correct")  {
+    val quad_1a = (361 to 405).map(d => sin(Radian(d)))
+    val quad_1b = (361 to 405).map(d => Math.sin(Radian(d).value.toDouble))
+    //println(quad_1a.zip(quad_1b))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("Sin (406 - 450) degrees should be positive and correct")  {
+    val quad_1a = (406 to 450).map(d => sin(Radian(d)))
+    val quad_1b = (406 to 450).map(d => Math.sin(Radian(d).value.toDouble))
+    //println(quad_1a.zip(quad_1b))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+
+
+  //=====================COSINE=======================================
+
+  test("cos (0 - -45) degrees should be positive and correct")  {
+    val quad_1a = (0 to (-45, -1)).map(d => cos(Radian(d)))
+    val quad_1b = (0 to (-45, -1)).map(d => Math.cos(Radian(d).value.toDouble))
+    //quad_1a.zip(quad_1b).foreach(println(_))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("cos (-46 - -90) degrees should be positive and correct")  {
+    val quad_1a = (-46 to (-90, -1)).map(d => cos(Radian(d)))
+    val quad_1b = (-46 to (-90, -1)).map(d => Math.cos(Radian(d).value.toDouble))
+    //println(quad_1a.zip(quad_1b))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("cos (-91 - -135) degrees should be positive and correct")  {
+    val quad_1a = (-91 to (-135, -1)).map(d => cos(Radian(d)))
+    val quad_1b = (-91 to (-135, -1)).map(d => Math.cos(Radian(d).value.toDouble))
+    //quad_1a.zip(quad_1b).foreach(println(_))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("cos (-136 - -180) degrees should be positive and correct")  {
+    val quad_1a = (-136 to (-180, -1)).map(d => cos(Radian(d)))
+    val quad_1b = (-136 to (-180, -1)).map(d => Math.cos(Radian(d).value.toDouble))
+    //println(quad_1a.zip(quad_1b))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("cos (-181 - -225) degrees should be positive and correct")  {
+    val quad_1a = (-181 to (-225, -1)).map(d => cos(Radian(d)))
+    val quad_1b = (-181 to (-225, -1)).map(d => Math.cos(Radian(d).value.toDouble))
+    //quad_1a.zip(quad_1b).foreach(println(_))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("cos (-226 - -270) degrees should be positive and correct")  {
+    val quad_1a = (-226 to (-270, -1)).map(d => cos(Radian(d)))
+    val quad_1b = (-226 to (-270, -1)).map(d => Math.cos(Radian(d).value.toDouble))
+    //println(quad_1a.zip(quad_1b))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("cos (-270 - -315) degrees should be positive and correct")  {
+    val quad_1a = (-270 to (-315, -1)).map(d => cos(Radian(d)))
+    val quad_1b = (-270 to (-315, -1)).map(d => Math.cos(Radian(d).value.toDouble))
+    //quad_1a.zip(quad_1b).foreach(println(_))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("cos (-316 - -360) degrees should be positive and correct")  {
+    val quad_1a = (-316 to (-360, -1)).map(d => cos(Radian(d)))
+    val quad_1b = (-316 to (-360, -1)).map(d => Math.cos(Radian(d).value.toDouble))
+    //println(quad_1a.zip(quad_1b))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("cos (-361 - -405) degrees should be positive and correct")  {
+    val quad_1a = (-361 to (-405, -1)).map(d => cos(Radian(d)))
+    val quad_1b = (-361 to (-405, -1)).map(d => Math.cos(Radian(d).value.toDouble))
+    //println(quad_1a.zip(quad_1b))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("cos (-406 - -450) degrees should be positive and correct")  {
+    val quad_1a = (-406 to (-450, -1)).map(d => cos(Radian(d)))
+    val quad_1b = (-406 to (-450, -1)).map(d => Math.cos(Radian(d).value.toDouble))
+    //println(quad_1a.zip(quad_1b))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+
+  test("cos (0 - 45) degrees should be positive and correct")  {
+    val quad_1a = (0 to 45).map(d => cos(Radian(d)))
+    val quad_1b = (0 to 45).map(d => Math.cos(Radian(d).value.toDouble))
+    //quad_1a.zip(quad_1b).foreach(println(_))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("cos (46 - 90) degrees should be positive and correct")  {
+    val quad_1a = (46 to 90).map(d => cos(Radian(d)))
+    val quad_1b = (46 to 90).map(d => Math.cos(Radian(d).value.toDouble))
+    //println(quad_1a.zip(quad_1b))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("cos (91 - 135) degrees should be positive and correct")  {
+    val quad_1a = (91 to 135).map(d => cos(Radian(d)))
+    val quad_1b = (91 to 135).map(d => Math.cos(Radian(d).value.toDouble))
+    //quad_1a.zip(quad_1b).foreach(println(_))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("cos (136 - 180) degrees should be positive and correct")  {
+    val quad_1a = (136 to 180).map(d => cos(Radian(d)))
+    val quad_1b = (136 to 180).map(d => Math.cos(Radian(d).value.toDouble))
+    //println(quad_1a.zip(quad_1b))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("cos (181 - 225) degrees should be positive and correct")  {
+    val quad_1a = (181 to 225).map(d => cos(Radian(d)))
+    val quad_1b = (181 to 225).map(d => Math.cos(Radian(d).value.toDouble))
+    //quad_1a.zip(quad_1b).foreach(println(_))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("cos (226 - 270) degrees should be positive and correct")  {
+    val quad_1a = (226 to 270).map(d => cos(Radian(d)))
+    val quad_1b = (226 to 270).map(d => Math.cos(Radian(d).value.toDouble))
+    //println(quad_1a.zip(quad_1b))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("cos (270 - 315) degrees should be positive and correct")  {
+    val quad_1a = (270 to 315).map(d => cos(Radian(d)))
+    val quad_1b = (270 to 315).map(d => Math.cos(Radian(d).value.toDouble))
+    //quad_1a.zip(quad_1b).foreach(println(_))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("cos (316 - 360) degrees should be positive and correct")  {
+    val quad_1a = (316 to 360).map(d => cos(Radian(d)))
+    val quad_1b = (316 to 360).map(d => Math.cos(Radian(d).value.toDouble))
+    //println(quad_1a.zip(quad_1b))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("cos (361 - 405) degrees should be positive and correct")  {
+    val quad_1a = (361 to 405).map(d => cos(Radian(d)))
+    val quad_1b = (361 to 405).map(d => Math.cos(Radian(d).value.toDouble))
+    //println(quad_1a.zip(quad_1b))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+  test("cos (406 - 450) degrees should be positive and correct")  {
+    val quad_1a = (406 to 450).map(d => cos(Radian(d)))
+    val quad_1b = (406 to 450).map(d => Math.cos(Radian(d).value.toDouble))
+    //println(quad_1a.zip(quad_1b))
+    assert(~~=(quad_1a, quad_1b))
+
+  }
+
+
 
   test("Sin gives correct number of decimal places") {
 
-    assert(~=(sin(new Radian(10), 2).toString().split('.')(1).length, 2))
-    assert(~=(sin(new Radian(20), 3).toString().split('.')(1).length, 3))
-    assert(~=(sin(new Radian(30), 4).toString().split('.')(1).length, 4))
-    assert(~=(sin(new Radian(40), 5).toString().split('.')(1).length, 5))
-    assert(~=(sin(new Radian(10), 6).toString().split('.')(1).length, 6))
-    assert(~=(sin(new Radian(20), 7).toString().split('.')(1).length, 7))
-    assert(~=(sin(new Radian(30), 8).toString().split('.')(1).length, 8))
-    assert(~=(sin(new Radian(40), 9).toString().split('.')(1).length, 9))
+    assert(~=(sin(Radian(10), 2).toString().split('.')(1).length, 2))
+    assert(~=(sin(Radian(20), 3).toString().split('.')(1).length, 3))
+    assert(~=(sin(Radian(30), 4).toString().split('.')(1).length, 4))
+    assert(~=(sin(Radian(40), 5).toString().split('.')(1).length, 5))
+    assert(~=(sin(Radian(10), 6).toString().split('.')(1).length, 6))
+    assert(~=(sin(Radian(20), 7).toString().split('.')(1).length, 7))
+    assert(~=(sin(Radian(30), 8).toString().split('.')(1).length, 8))
+    assert(~=(sin(Radian(40), 9).toString().split('.')(1).length, 9))
   }
 
 
 
-  test("Cos values are correct about zero") {
+/*  test("E values are correct about zero") {
 
-    val eta = 0.001
-    assert(~=(cos(new Radian(10), 10), Math.cos(new Radian(10).value.toDouble)))
-    assert(~=(cos(new Radian(20), 10), Math.cos(new Radian(20).value.toDouble)))
-    assert(~=(cos(new Radian(30), 10), Math.cos(new Radian(30).value.toDouble)))
-    assert(~=(cos(new Radian(40), 7), Math.cos(new Radian(40).value.toDouble)))
-    assert(~=(cos(new Radian(50), 5), Math.cos(new Radian(50).value.toDouble)))
-    assert(~=(cos(new Radian(60), 3), Math.cos(new Radian(60).value.toDouble)))
-    assert(~=(cos(new Radian(-10), 10), Math.cos(new Radian(10).value.toDouble)))
-    assert(~=(cos(new Radian(-20), 10), Math.cos(new Radian(-20).value.toDouble)))
-    assert(~=(cos(new Radian(-30), 10), Math.cos(new Radian(-30).value.toDouble)))
-    assert(~=(cos(new Radian(-40), 7), Math.cos(new Radian(-40).value.toDouble)))
-    assert(~=(cos(new Radian(-50), 5), Math.cos(new Radian(-50).value.toDouble)))
-    assert(~=(cos(new Radian(-60), 3), Math.cos(new Radian(-60).value.toDouble)))
-  }
-
-  test("E values are correct about zero") {
-
-    assert(~=(e(0.2), Math.exp(0.2)))
-    assert(~=(e(0.3), Math.exp(0.3)))
-    assert(~=(e(0.4), Math.exp(0.4)))
-    assert(~=(e(0.5), Math.exp(0.5)))
-    assert(~=(e(0.6), Math.exp(0.6)))
+    assert(~=(e(Radian(0.2)), Math.exp(0.2)))
+    assert(~=(e(Radian(0.3)), Math.exp(0.3)))
+    assert(~=(e(Radian(0.4)), Math.exp(0.4)))
+    assert(~=(e(Radian(0.5)), Math.exp(0.5)))
+    assert(~=(e(Radian(0.6)), Math.exp(0.6)))
   }
 
   test("E values without mem are correct about zero") {
 
-    assert(~=(e(0.2,10, mem = false), Math.exp(0.2)))
-    assert(~=(e(0.3,10, mem = false), Math.exp(0.3)))
-    assert(~=(e(0.4,10, mem = false), Math.exp(0.4)))
-    assert(~=(e(0.5,10, mem = false), Math.exp(0.5)))
-    assert(~=(e(0.6,10, mem = false), Math.exp(0.6)))
-    assert(~=(e(1,  5,  mem = false), Math.exp(1)))
-    assert(~=(e(1,  5,  mem = false), Math.exp(1)))
+    assert(~=(e(Radian(0.2),10, mem = false), Math.exp(0.2)))
+    assert(~=(e(Radian(0.3),10, mem = false), Math.exp(0.3)))
+    assert(~=(e(Radian(0.4),10, mem = false), Math.exp(0.4)))
+    assert(~=(e(Radian(0.5),10, mem = false), Math.exp(0.5)))
+    assert(~=(e(Radian(0.6),10, mem = false), Math.exp(0.6)))
+    assert(~=(e(Radian(1),  5,  mem = false), Math.exp(1)))
+    assert(~=(e(Radian(1),  5,  mem = false), Math.exp(1)))
   }
 
   test("E values with mem are correct about zero") {
 
-    assert(~=(e(0.2,10, mem = true), Math.exp(0.2)))
-    assert(~=(e(0.3,10, mem = true), Math.exp(0.3)))
-    assert(~=(e(0.4,10, mem = true), Math.exp(0.4)))
-    assert(~=(e(0.5,10, mem = true), Math.exp(0.5)))
-    assert(~=(e(0.6,10, mem = true), Math.exp(0.6)))
-    assert(~=(e(1,  5,  mem = true), Math.exp(1)))
-    assert(~=(e(1,  5,  mem = true), Math.exp(1)))
+    assert(~=(e(Radian(0.2),10, mem = true), Math.exp(0.2)))
+    assert(~=(e(Radian(0.3),10, mem = true), Math.exp(0.3)))
+    assert(~=(e(Radian(0.4),10, mem = true), Math.exp(0.4)))
+    assert(~=(e(Radian(0.5),10, mem = true), Math.exp(0.5)))
+    assert(~=(e(Radian(0.6),10, mem = true), Math.exp(0.6)))
+    assert(~=(e(Radian(1),  5,  mem = true), Math.exp(1)))
+    assert(~=(e(Radian(1),  5,  mem = true), Math.exp(1)))
 
-  }
+  }*/
 
   test("factorial is correct about zero") {
 
@@ -106,7 +406,7 @@ class TaylorSeriesSuite extends FunSuite {
   }
 
   test("TaylorPolynomial is correct about zero") {
-    val rad30 = new Radian(BigDecimal(30))
+    val rad30 = Radian(30)
     assert(taylorSeries(Sin(rad30)).take(10).sum == sumTaylorSeries( taylorSeries( Sin(rad30)), 10))
   }
 
@@ -121,36 +421,45 @@ class TaylorSeriesSuite extends FunSuite {
 
   test("Radian class is correct") {
     import Mathz.Radian
-    val rad360 = new Radian(BigDecimal(360))
-    val rad180 = new Radian(BigDecimal(180))
-    val neg_rad180 = new Radian(BigDecimal(-180))
-    val rad361 = new Radian(BigDecimal(361))
-    val rad120 = new Radian(BigDecimal(120))
-    val neg_rad120 = new Radian(BigDecimal(-120))
-    val rad90 = new  Radian(BigDecimal(90))
-    val rad30 = new Radian(BigDecimal(30))
-    val neg_rad30 = new Radian(BigDecimal(-30))
-    val rad1 = new Radian(BigDecimal(1))
-    val rad0 = new Radian(BigDecimal(0))
 
-    //
-    assert(~=(new Radian(180).degrees, 180))
-    assert(~=(new Radian(180).value, Math.PI))
-    assert(~=(new Radian(90).value, 2 *Math.PI / 4))
+    val rad120 = Radian(120)
+    val rad90 = Radian(90)
+    val rad30 = Radian(30)
 
-    // = - * /
+    assert(~=(Radian(180).degrees, 180))
+    assert(~=(Radian(180).value, Math.PI))
+    assert(~=(Radian(90).value, 2 *Math.PI / 4))
     assert(~=((rad30 + rad30).value, (rad90 - rad30).value))
     assert(~=((rad30 * 2).value, (rad120 / 2).value))
     assert(~=(rad30.degrees, 30))
 
-    //to Range
-    assert(~=(rad360.toRange(rad180).value, rad0.value))
-    assert(~=(rad180.toRange(rad360).value, rad180.value))
-    assert(~=(neg_rad180.toRange(rad360).value, neg_rad180.value))
-    assert(~=(rad361.toRange(rad360).value, rad1.value))
-    assert(~=(rad120.toRange(rad90).value, rad30.value))
-    assert(~=(neg_rad120.toRange(rad90).value, neg_rad30.value))
 
+  }
+
+  test("squeeze for Pos is correct") {
+    assert(squeeze(1) == 1)
+    assert(squeeze(89) == 89)
+    assert(squeeze(91) == 89)
+    assert(squeeze(179) == 1)
+    assert(squeeze(181) == -1)
+    assert(squeeze(269) == -89)
+    assert(squeeze(271) == -89)
+    assert(squeeze(359) == -1)
+    assert(squeeze(449) == 89)
+    assert(squeeze(539) == 1)
+  }
+
+  test("squeeze for Neg is correct") {
+    assert(squeeze(-1) == -1)
+    assert(squeeze(-89) == -89)
+    assert(squeeze(-91) == -89)
+    assert(squeeze(-179) == -1)
+    assert(squeeze(-181) == 1)
+    assert(squeeze(-269) == 89)
+    assert(squeeze(-271) == 89)
+    assert(squeeze(-359) == 1)
+    assert(squeeze(-449) == -89)
+    assert(squeeze(-539) == -1)
   }
 }
 

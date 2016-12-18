@@ -1,0 +1,18 @@
+private def squeeze(deg: ):  = deg match {
+  case
+val d = deg % 360
+if(d > 0){
+if(d < 90) d
+else if (d < 180) 180 - d
+else if (d < 270)  -(d -180)
+else -(90 - (d % 270))
+}else{
+if (d > -90) d
+else if (d > -180) -180 - d
+else if (d > -270) -(d + 180)
+else 90 - (-d % 270)
+}
+}
+
+
+t

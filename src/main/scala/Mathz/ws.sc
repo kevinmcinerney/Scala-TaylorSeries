@@ -1,9 +1,9 @@
-
+import Mathz._
 
 object ws {
 
 
-  print("0.1234".split('.')(1).length)
+println(Mathz.squeeze(-360%360.abs))
 
 
 
