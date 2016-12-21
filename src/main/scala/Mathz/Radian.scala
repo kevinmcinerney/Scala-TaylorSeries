@@ -1,11 +1,6 @@
-/*
 package Mathz
 
-/**
-  * Created by kevin on 18/12/16.
-  */
-
-class Radian  (val degrees: Double) {
+class Radian private (val degrees: BigDecimal) {
 
   private val PI = Math.PI
 
@@ -25,4 +20,4 @@ class Radian  (val degrees: Double) {
 
 }
 
-object Radian { def apply(degree: Double) = new Radian(degree) }*/
+object Radian { def apply(degree: BigDecimal) = new Radian(degree) }

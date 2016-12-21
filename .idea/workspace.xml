@@ -6,24 +6,146 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$38ba92f585cbfc5ac597$.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$38ba92f585cbfc5ac597.cache" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/project/target/config-classes/$38ba92f585cbfc5ac597.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Calclator/Calculator.scala" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Calclator/Calculator$.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Calclator/Calculator.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/Mathz$$anonfun$Mathz$Mathz$$cosSeries$1.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/Mathz$$anonfun$Mathz$Mathz$$eulerSeries$1.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/Mathz$$anonfun$Mathz$Mathz$$sinSeries$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/MathzRunner$$anonfun$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/MathzRunner$$anonfun$2.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/MathzRunner$$anonfun$3.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/MathzRunner$$anonfun$4.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$1.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$101$$anonfun$102.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$101$$anonfun$31.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$101.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$103$$anonfun$104.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$103$$anonfun$32.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$103.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$105$$anonfun$106.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$105$$anonfun$33.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$105.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$107$$anonfun$108.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$107$$anonfun$34.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$107.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$109$$anonfun$110.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$109$$anonfun$35.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$109.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$111$$anonfun$112.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$111$$anonfun$36.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$111.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$113$$anonfun$114.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$113$$anonfun$37.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$113.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$115$$anonfun$116.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$115$$anonfun$38.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$115.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$117$$anonfun$118.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$117$$anonfun$39.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$117.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$119$$anonfun$120.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$119$$anonfun$40.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$119.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$121.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$123.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$125.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$127.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$2.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$3.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$41$$anonfun$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$41$$anonfun$42.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$43$$anonfun$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$43$$anonfun$44.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$45$$anonfun$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$45$$anonfun$46.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$47$$anonfun$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$47$$anonfun$48.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$47.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$49$$anonfun$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$49$$anonfun$50.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$49.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$51$$anonfun$52.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$51$$anonfun$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$51.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$53$$anonfun$54.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$53$$anonfun$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$53.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$55$$anonfun$56.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$55$$anonfun$8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$55.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$57$$anonfun$58.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$57$$anonfun$9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$57.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$59$$anonfun$10.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$59$$anonfun$60.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$59.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$61$$anonfun$11.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$61$$anonfun$62.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$61.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$63$$anonfun$12.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$63$$anonfun$64.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$63.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$65$$anonfun$13.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$65$$anonfun$66.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$65.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$67$$anonfun$14.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$67$$anonfun$68.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$67.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$69$$anonfun$15.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$69$$anonfun$70.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$69.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$71$$anonfun$16.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$71$$anonfun$72.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$71.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$73$$anonfun$17.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$73$$anonfun$74.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$73.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$75$$anonfun$18.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$75$$anonfun$76.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$75.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$77$$anonfun$19.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$77$$anonfun$78.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$77.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$79$$anonfun$20.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$79$$anonfun$80.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$79.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$81$$anonfun$21.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$81$$anonfun$82.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$81.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$83$$anonfun$22.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$83$$anonfun$84.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$83.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$85$$anonfun$23.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$85$$anonfun$86.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$85.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$87$$anonfun$24.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$87$$anonfun$88.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$87.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$89$$anonfun$25.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$89$$anonfun$90.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$89.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$91$$anonfun$26.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$91$$anonfun$92.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$91.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$93$$anonfun$27.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$93$$anonfun$94.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$93.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$95$$anonfun$28.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$95$$anonfun$96.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$95.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$97$$anonfun$29.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$97$$anonfun$98.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$97.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$99$$anonfun$100.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$99$$anonfun$30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$99.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Calclator/Calculator$.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Calclator/Calculator.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Mathz/Cos$.class" afterPath="" />
@@ -64,16 +186,23 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/Euler.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/Euler.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/Mathz$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/Mathz$.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/Mathz.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/Mathz.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/MathzRunner$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/MathzRunner$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/MathzRunner$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/MathzRunner$$anonfun$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/MathzRunner$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/MathzRunner$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/Radian$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/Radian$.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/Radian.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/Radian.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/Sin$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/Sin$.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/Sin.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/Sin.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/TaylorSeries.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/TaylorSeries.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$122.class" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$122.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$124.class" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$124.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$126.class" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$126.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$41.class" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$41.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$43.class" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$43.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$45.class" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite$$anonfun$45.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite.class" afterPath="$PROJECT_DIR$/target/scala-2.11/test-classes/TaylorSeriesSuite.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/Mathz/Mathz.scala" afterPath="$PROJECT_DIR$/src/main/scala/Mathz/Mathz.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/Mathz/Radian.scala" afterPath="$PROJECT_DIR$/src/main/scala/Mathz/Radian.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/Mathz/TaylorSeries.scala" afterPath="$PROJECT_DIR$/src/main/scala/Mathz/TaylorSeries.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/Mathz/ws.sc" afterPath="$PROJECT_DIR$/src/main/scala/Mathz/ws.sc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/TaylorSeriesSuite.scala" afterPath="$PROJECT_DIR$/src/test/scala/TaylorSeriesSuite.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/ws.sc" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Mathz/ws.sc" />
@@ -114,13 +243,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Mathz.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Mathz.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Mathz/Mathz.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1512">
-              <caret line="84" column="3" selection-start-line="84" selection-start-column="3" selection-end-line="84" selection-end-column="3" />
+            <state relative-caret-position="416">
+              <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
               <folding>
-                <element signature="e#58#102#0" expanded="true" />
+                <element signature="e#15#59#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,8 +258,8 @@
       <file leaf-file-name="TaylorSeries.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Mathz/TaylorSeries.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="31" column="3" selection-start-line="27" selection-start-column="11" selection-end-line="31" selection-end-column="3" />
+            <state relative-caret-position="181">
+              <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -139,8 +268,8 @@
       <file leaf-file-name="Radian.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Mathz/Radian.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="27" column="64" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="36">
+              <caret line="2" column="33" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -149,8 +278,8 @@
       <file leaf-file-name="ws.sc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Mathz/ws.sc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="72">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -166,11 +295,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaylorSeriesSuite.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TaylorSeriesSuite.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/scala/TaylorSeriesSuite.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="373" column="3" selection-start-line="373" selection-start-column="3" selection-end-line="373" selection-end-column="3" />
+            <state relative-caret-position="45">
+              <caret line="96" column="79" selection-start-line="96" selection-start-column="79" selection-end-line="96" selection-end-column="79" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#43#74#0" expanded="true" />
@@ -215,10 +344,10 @@
         <option value="$PROJECT_DIR$/src/main/scala/Mathz/Math.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/test" />
         <option value="$PROJECT_DIR$/src/main/scala/Mathz/ws.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/Mathz/Radian.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/TaylorSeriesSuite.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Mathz/TaylorSeries.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Mathz/Mathz.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Mathz/Radian.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Mathz/TaylorSeries.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/TaylorSeriesSuite.scala" />
       </list>
     </option>
   </component>
@@ -256,160 +385,7 @@
       <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaylorPoly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaylorPoly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaylorPoly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaylorPoly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaylorPoly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaylorPoly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaylorPoly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaylorPoly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaylorPoly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaylorPoly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaylorPoly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaylorPoly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaylorPoly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Mathz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaylorPoly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TaylorPoly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Mathz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Mathz.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="Scratches" />
     </panes>
@@ -885,34 +861,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TaylorSeriesSuite - 2016.12.18 at 17h 42m 34s.xml">
+    <history-entry file="TaylorSeriesSuite - 2016.12.21 at 19h 05m 08s.xml">
       <configuration name="TaylorSeriesSuite" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TaylorSeriesSuite - 2016.12.18 at 17h 50m 01s.xml">
+    <history-entry file="TaylorSeriesSuite - 2016.12.21 at 19h 09m 19s.xml">
       <configuration name="TaylorSeriesSuite" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TaylorSeriesSuite - 2016.12.18 at 18h 11m 52s.xml">
+    <history-entry file="TaylorSeriesSuite - 2016.12.21 at 19h 12m 17s.xml">
       <configuration name="TaylorSeriesSuite" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TaylorSeriesSuite - 2016.12.18 at 18h 57m 54s.xml">
+    <history-entry file="TaylorSeriesSuite - 2016.12.21 at 19h 14m 42s.xml">
       <configuration name="TaylorSeriesSuite" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TaylorSeriesSuite - 2016.12.18 at 19h 10m 46s.xml">
+    <history-entry file="TaylorSeriesSuite - 2016.12.21 at 19h 15m 33s.xml">
       <configuration name="TaylorSeriesSuite" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TaylorSeriesSuite - 2016.12.18 at 19h 11m 26s.xml">
+    <history-entry file="TaylorSeriesSuite - 2016.12.21 at 19h 17m 06s.xml">
       <configuration name="TaylorSeriesSuite" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TaylorSeriesSuite - 2016.12.18 at 20h 32m 00s.xml">
+    <history-entry file="TaylorSeriesSuite - 2016.12.21 at 19h 18m 10s.xml">
       <configuration name="TaylorSeriesSuite" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TaylorSeriesSuite - 2016.12.18 at 20h 33m 03s.xml">
+    <history-entry file="TaylorSeriesSuite - 2016.12.21 at 19h 18m 34s.xml">
       <configuration name="TaylorSeriesSuite" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TaylorSeriesSuite - 2016.12.18 at 20h 37m 39s.xml">
+    <history-entry file="TaylorSeriesSuite - 2016.12.21 at 19h 18m 52s.xml">
       <configuration name="TaylorSeriesSuite" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TaylorSeriesSuite - 2016.12.18 at 20h 46m 41s.xml">
+    <history-entry file="TaylorSeriesSuite - 2016.12.21 at 19h 20m 00s.xml">
       <configuration name="TaylorSeriesSuite" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
@@ -922,18 +898,18 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991913" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.5018868" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3975535" sideWeight="0.49811321" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6687054" sideWeight="0.49811321" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959569" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959569" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -951,7 +927,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.5018868" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -961,12 +937,12 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991913" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3975535" sideWeight="0.49811321" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959569" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -999,7 +975,7 @@
         <state relative-caret-position="630">
           <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
           <folding>
-            <element signature="e#58#102#0" expanded="true" />
+            <element signature="e#15#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1044,7 +1020,7 @@
         <state relative-caret-position="3096">
           <caret line="172" column="48" selection-start-line="172" selection-start-column="48" selection-end-line="172" selection-end-column="48" />
           <folding>
-            <element signature="e#58#102#0" expanded="true" />
+            <element signature="e#15#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1089,7 +1065,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#58#102#0" expanded="true" />
+            <element signature="e#15#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1126,7 +1102,7 @@
         <state relative-caret-position="1332">
           <caret line="74" column="27" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
           <folding>
-            <element signature="e#58#102#0" expanded="true" />
+            <element signature="e#15#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1147,7 +1123,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#58#102#0" expanded="true" />
+            <element signature="e#15#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1215,45 +1191,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Mathz/ws.sc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="72">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Mathz/Radian.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="27" column="64" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/TaylorSeriesSuite.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="373" column="3" selection-start-line="373" selection-start-column="3" selection-end-line="373" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#43#74#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Mathz/TaylorSeries.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="31" column="3" selection-start-line="27" selection-start-column="11" selection-end-line="31" selection-end-column="3" />
+        <state relative-caret-position="36">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Mathz/Mathz.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1512">
-          <caret line="84" column="3" selection-start-line="84" selection-start-column="3" selection-end-line="84" selection-end-column="3" />
+        <state relative-caret-position="416">
+          <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="4" />
           <folding>
-            <element signature="e#58#102#0" expanded="true" />
+            <element signature="e#15#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Mathz/TaylorSeries.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/TaylorSeriesSuite.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="96" column="79" selection-start-line="96" selection-start-column="79" selection-end-line="96" selection-end-column="79" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#43#74#0" expanded="true" />
           </folding>
         </state>
       </provider>

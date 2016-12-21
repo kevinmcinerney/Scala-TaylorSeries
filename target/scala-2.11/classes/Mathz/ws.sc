@@ -1,10 +1,8 @@
-import Mathz._
+package Mathz
+
 
 object ws {
 
-
-println(Mathz.squeeze(-360%360.abs))
-
-
+  println(sin(Radian(89)))
 
 }

@@ -20,6 +20,76 @@ class TaylorSeriesSuite extends FunSuite {
     x.zip(y).forall(tup => ~=(tup._1, tup._2))
   }
 
+
+  test("factorial is correct about zero") {
+
+    assert(factorial(0) == 1)
+    assert(factorial(3) == 6)
+    assert(factorial(4) == 24)
+    assert(factorial(5) == 120)
+    assert(factorial(6) == 720)
+  }
+
+  /* test("TaylorPolynomial is correct about zero") {
+     val rad30 = Radian(30)
+     assert(Sin(30).series(0).take(10).sum == Sin(30).series(0), 10)
+   }*/
+
+  test("pow is correct") {
+
+    assert(pow(-1, 0) == 1)
+    assert(pow(-1, 1) == -1)
+    assert(pow(-1, 2) == 1)
+    assert(pow(-1, 3) == -1)
+  }
+
+
+  test("Radian class is correct") {
+    import Mathz.Radian
+
+    val rad120 = Radian(120)
+    val rad90 = Radian(90)
+    val rad30 = Radian(30)
+
+    assert(~=(Radian(180).degrees, 180))
+    assert(~=(Radian(180).value, Math.PI))
+    assert(~=(Radian(90).value, 2 *Math.PI / 4))
+    assert(~=((rad30 + rad30).value, (rad90 - rad30).value))
+    assert(~=((rad30 * 2).value, (rad120 / 2).value))
+    assert(~=(rad30.degrees, 30))
+
+
+  }
+
+  test("squeeze for Pos is correct") {
+
+    println("=>"+sin(Radian(1)))
+    println("->"+Sin(Radian(1)).squeeze())
+    assert(~=(Sin(Radian(1)).squeeze(), 1))
+    assert(~=(Sin(Radian(89)).squeeze(), 89))
+    assert(~=(Sin(Radian(91)).squeeze(), 89))
+    assert(~=(Sin(Radian(179)).squeeze(), 1))
+    assert(~=(Sin(Radian(181)).squeeze(), -1))
+    assert(~=(Sin(Radian(269)).squeeze(), -89))
+    assert(~=(Sin(Radian(271)).squeeze(), -89))
+    assert(~=(Sin(Radian(359)).squeeze(), -1))
+    assert(~=(Sin(Radian(449)).squeeze(), 89))
+    assert(~=(Sin(Radian(539)).squeeze(), 1))
+  }
+
+  test("squeeze for Neg is correct") {
+    assert(~=(Sin(Radian(-1)).squeeze(),  -1))
+    assert(~=(Sin(Radian(-89)).squeeze(), -89))
+    assert(~=(Sin(Radian(-91)).squeeze(), -89))
+    assert(~=(Sin(Radian(-179)).squeeze(), -1))
+    assert(~=(Sin(Radian(-181)).squeeze(), 1))
+    assert(~=(Sin(Radian(-269)).squeeze(), 89))
+    assert(~=(Sin(Radian(-271)).squeeze(), 89))
+    assert(~=(Sin(Radian(-359)).squeeze(), 1))
+    assert(~=(Sin(Radian(-449)).squeeze(), -89))
+    assert(~=(Sin(Radian(-539)).squeeze(), -1))
+  }
+
   //====================SINE================================================
 
   test("Sin (0 - -45) degrees should be positive and correct")  {
@@ -396,71 +466,6 @@ class TaylorSeriesSuite extends FunSuite {
 
   }*/
 
-  test("factorial is correct about zero") {
-
-    assert(factorial(0) == 1)
-    assert(factorial(3) == 6)
-    assert(factorial(4) == 24)
-    assert(factorial(5) == 120)
-    assert(factorial(6) == 720)
-  }
-
-  test("TaylorPolynomial is correct about zero") {
-    val rad30 = Radian(30)
-    assert(taylorSeries(Sin(rad30)).take(10).sum == sumTaylorSeries( taylorSeries( Sin(rad30)), 10))
-  }
-
-  test("pow is correct") {
-
-    assert(pow(-1, 0) == 1)
-    assert(pow(-1, 1) == -1)
-    assert(pow(-1, 2) == 1)
-    assert(pow(-1, 3) == -1)
-  }
-
-
-  test("Radian class is correct") {
-    import Mathz.Radian
-
-    val rad120 = Radian(120)
-    val rad90 = Radian(90)
-    val rad30 = Radian(30)
-
-    assert(~=(Radian(180).degrees, 180))
-    assert(~=(Radian(180).value, Math.PI))
-    assert(~=(Radian(90).value, 2 *Math.PI / 4))
-    assert(~=((rad30 + rad30).value, (rad90 - rad30).value))
-    assert(~=((rad30 * 2).value, (rad120 / 2).value))
-    assert(~=(rad30.degrees, 30))
-
-
-  }
-
-  test("squeeze for Pos is correct") {
-    assert(squeeze(1) == 1)
-    assert(squeeze(89) == 89)
-    assert(squeeze(91) == 89)
-    assert(squeeze(179) == 1)
-    assert(squeeze(181) == -1)
-    assert(squeeze(269) == -89)
-    assert(squeeze(271) == -89)
-    assert(squeeze(359) == -1)
-    assert(squeeze(449) == 89)
-    assert(squeeze(539) == 1)
-  }
-
-  test("squeeze for Neg is correct") {
-    assert(squeeze(-1) == -1)
-    assert(squeeze(-89) == -89)
-    assert(squeeze(-91) == -89)
-    assert(squeeze(-179) == -1)
-    assert(squeeze(-181) == 1)
-    assert(squeeze(-269) == 89)
-    assert(squeeze(-271) == 89)
-    assert(squeeze(-359) == 1)
-    assert(squeeze(-449) == -89)
-    assert(squeeze(-539) == -1)
-  }
 }
 
 
